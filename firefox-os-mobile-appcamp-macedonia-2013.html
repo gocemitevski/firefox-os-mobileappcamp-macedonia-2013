@@ -1,0 +1,274 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Firefox OS @ Mobile AppCamp Macedonia 2013</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    /*div[id$='bullets'].slide > div::after {
+      content: 'For Information only, do NOT present';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }*/
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+  </style>
+</head>
+<body class="list">
+
+		<header class="caption">
+			<h1>Firefox OS @ Mobile AppCamp Macedonia 2013</h1>
+			<p class="footer">
+				Goce Mitevski
+				(<a href="http://twitter.com/GoceMitevski">@GoceMitevski</a>, <a href="mailto:&#103;&#111;&#099;&#101;&#046;&#109;&#105;&#116;&#101;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#103;&#111;&#099;&#101;&#046;&#109;&#105;&#116;&#101;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>, <a href="http://twitter.com/Mozilla_MK">@Mozilla_MK</a>)
+			</p>
+		</header>
+		<aside class="talkdescription">
+			<p>This slide deck is using the shower system - roll over the previews to see the notes and click any slide to go into presentation mode. Then use keys to navigate. <button onclick="goFullScreen()">Go fullscreen</button></p>
+			<p class="abstract">
+				<strong>Abstract: </strong>
+				15-minute introductory presentation about Firefox OS
+			</p>
+		</aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+		<div id="cover" class="slide"><div>
+				<section>
+					<header>
+						<h2>Introducing Firefox OS</h2>
+					</header>
+					<img src="pictures/firefoxos.png"
+						 class="left" height="430"
+						 alt="High-five at the Mozilla Festival!">
+					<small class="byline">
+						Goce Mitevski, Mobile AppCamp Macedonia 2013,<br>26th October 2013, Skopje, Macedonia
+					</small>
+				</section>
+			</div></div>
+
+		<div id="slideslink" class="slide"><div>
+				<section>
+					<header>
+						<h2>Presentation available on GitHub</h2>
+					</header>
+					<p>
+						<a href="http://gocemitevski.github.io/firefox-os-mobilewebcamp-macedonia-2013/">http://gocemitevski.github.io/firefox-os-mobilewebcamp-macedonia-2013/</a>
+					</p>
+					<small>Created using the Mozilla presentation templates:<br><a href="https://github.com/codepo8/mozilla-presentation-templates">https://github.com/codepo8/mozilla-presentation-templates</a></small>
+				</section>
+			</div></div>
+
+		<!-- end slide block -->
+
+		<!-- ===================================================================
+		Firefox OS
+		======================================================================== -->
+
+		<div id="zomgnetscape" class="slide"><div>
+				<section>
+					<img src="pictures/Netscape_logo.svg"
+						 class="middle" height="200"
+						 alt="Netscape Logo">
+				</section>
+			</div></div>
+
+
+		<div id="mozilla-is" class="slide"><div>
+				<section>
+					<header>
+						<h2>Mozilla is&hellip;</h2>
+					</header>
+					<blockquote>
+						a global community of people who believe that <strong>openness</strong>, <strong>innovation</strong>, and <strong>opportunity</strong> are key to the continued health of the Internet.
+					</blockquote>
+				</section>
+			</div></div>
+
+		<div id="zomgmozilla" class="slide cover"><div>
+				<section>
+					<img src="pictures/mozilla-15-years-cake-goce-mitevski.png"
+						 class="middle" height="450"
+						 alt="15 Years Mozilla Cake Design by Goce Mitevski">
+				</section>
+			</div></div>
+
+		<div id="firefoxos" class="slide"><div>
+				<section>
+					<header>
+						<h2>Firefox OS</h2>
+					</header>
+					<img src="pictures/apps.png"
+						 alt="Firefox OS with Apps"
+						 class="middle" height="450">
+				</section>
+			</div></div>
+
+		<div id="firefoxosbullets" class="slide"><div>
+				<section>
+					<header>
+						<h2>Firefox OS</h2>
+					</header>
+					<ul>
+						<li>The only truly open-source mobile operating system out there</li>
+						<li>Does not include proprietary technologies</li>
+						<li>Both the operating system and apps for it are written in HTML5. The hardware access happens via a Linux core</li>
+						<li>All you need to know to write an app for Firefox OS is to know HTML5</li>
+						<li>If you develop for the Web, you are developing for Firefox OS</li>
+						<li>It is aimed at markets that don't have access to the current leading operating systems</li>
+					</ul>
+				</section>
+			</div></div>
+
+		<div id="fxarchitecure" class="slide cover"><div>
+				<section>
+					<img src="pictures/fxos-architecture.png"
+						 alt="Firefox OS Architecture Diagram"
+						 class="middle shadow" height="450">
+				</section>
+			</div></div>
+
+		<div id="marketplace" class="slide"><div>
+				<section>
+					<header>
+						<h2>Firefox OS Marketplace</h2>
+					</header>
+					<img src="pictures/marketplace.jpg" alt="Firefox OS Marketplace"
+						 class="middle shadow">
+					<p class="demourl">
+						<a href="https://marketplace.firefox.com">https://marketplace.firefox.com/</a>
+					</p>
+				</section>
+			</div></div>
+
+		<div id="jaysullivan" class="slide cover h"><div>
+				<section>
+					<video class="middle" height="450" controls>
+						<source src="videos/jay-sullivan-fxos.webm"  type="video/webm"></source>
+					</video>
+				</section>
+			</div></div>
+
+		<div id="forall" class="slide"><div>
+				<section>
+					<header>
+						<h2>Upgrading the mobile world</h2>
+					</header>
+					<figure class="right shadow frame">
+						<img src="pictures/nokia-photos.jpg"
+							 alt="Nokia couldn't take photos"
+							 height="400">
+					</figure>
+					<ul>
+						<li>Targeted at new, emerging markets</li>
+						<li>Very affordable hardware</li>
+						<li>Web technologies through and through</li>
+						<li>18 mobile partners, 4 hardware partners</li>
+					</ul>
+				</section>
+			</div></div>
+
+		<div id="webtech" class="slide cover"><div>
+				<section>
+					<header>
+						<h2>Everything in the OS is open web technology and standard proposals</h2>
+					</header>
+					<img src="pictures/firefox-os-emulator.jpg"
+						 alt="firefox os emulator and source"
+						 class="middle shadow" height="450">
+				</section>
+			</div></div>
+
+		<div id="fxosfuture" class="slide cover"><div>
+				<section>
+					<img src="pictures/be-the-future.jpg"
+						 alt="Firefox OS - Be the Future"
+						 class="middle shadow" height="450">
+				</section>
+			</div></div>
+
+		<!-- ===================================================================
+		INFORMATION RESOURCES
+		======================================================================== -->
+
+		<div id="resourcesbullets" class="slide"><div>
+				<section>
+					<header>
+						<h2>Further Info About Firefox OS</h2>
+					</header>
+					<ul class="longlist">
+						<li><a href="http://www.mozilla.org/en-US/firefox/os/">http://www.mozilla.org/en-US/firefox/os/</a> - the end user facing site of Firefox OS</li>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture">https://developer.mozilla.org/en-US/docs/Mozilla/Firefox_OS/Platform/Architecture</a> - the Firefox OS architecture in details</li>
+						<li><a href="https://marketplace.firefox.com/">https://marketplace.firefox.com/</a> - Where to get Firefox OS Apps</li>
+						<li><a href="https://marketplace.firefox.com/developers/">https://marketplace.firefox.com/developers/</a> - the developer Hub for marketplace, lots of information on how to design an app, demo apps for download and information how to submit your app.</li>
+						<li><a href="https://hacks.mozilla.org/category/firefox-os/">https://hacks.mozilla.org/category/firefox-os/</a> - The Mozilla Hacks blog articles with lots of information on how to write code for Firefox OS and how to install it</li>
+						<li><a href="https://hacks.mozilla.org/category/videoseries/">https://hacks.mozilla.org/category/videoseries/</a> is a series of video interviews showing all the different features of Firefox OS</li>
+						<li><a href="https://developer.mozilla.org/en/docs/Mozilla/Firefox_OS">https://developer.mozilla.org/en/docs/Mozilla/Firefox_OS</a> - the Firefox OS Wiki</li>
+					</ul>
+				</section>
+			</div></div>
+
+
+		<!-- ===================================================================
+		AND… I'M SPENT
+		======================================================================== -->
+
+		<div id="thanks" class="slide"><div>
+				<section>
+					<header>
+						<h2>Thanks!</h2>
+					</header>
+					<img src="pictures/SS858332.jpg" alt="Goce Mitevski and Firefox on Mozilla Summit 2013" class="right" height="300">
+					<ul class="nobull">
+						<li><a href="mailto:&#103;&#111;&#099;&#101;&#046;&#109;&#105;&#116;&#101;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#103;&#111;&#099;&#101;&#046;&#109;&#105;&#116;&#101;&#118;&#115;&#107;&#105;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></li>
+						<li><a href="http://twitter.com/GoceMitevski">@GoceMitevski</a></li>
+						<li><a href="http://twitter.com/Mozilla_MK">@Mozilla_MK</a></li>
+						<li><a href="https://mozilla.mk">https://mozilla.mk</a></li>
+						<li><a href="https://mozilla.org">https://mozilla.org</a></li>
+					</ul>
+				</section>
+			</div></div>
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
